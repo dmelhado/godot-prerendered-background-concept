@@ -392,7 +392,11 @@ script = ExtResource("2_rteqa")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="player"]
 shape = SubResource("CapsuleShape3D_8gs07")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="player"]
+[node name="body" type="MeshInstance3D" parent="player"]
+mesh = SubResource("CapsuleMesh_63adv")
+
+[node name="face" type="MeshInstance3D" parent="player"]
+transform = Transform3D(0.795, -3.85228e-10, 8.73115e-11, 4.68049e-10, 0.315, 5.82077e-11, -2.32831e-10, -8.73115e-11, 0.345, 0.0020287, 0.453245, -0.37189)
 mesh = SubResource("CapsuleMesh_63adv")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
